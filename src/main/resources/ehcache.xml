@@ -1,0 +1,14 @@
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="http://ehcache.org/ehcache.xsd">
+
+    <cache alias="userDetailsCache"
+           maxElementsInMemory="100"
+           timetiLiveSeconds="60"
+           evictionStrategy="LIFO"/>
+
+    <cache alias="orderDetailsCache"
+           maxElementsInMemory="1000"
+           timetiLiveSeconds="200"
+           evictionStrategy="FIFO"/>
+
+</ehcache>
